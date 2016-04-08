@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.channel.heihei" >
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+        <activity
+            android:name=".Activitys.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activitys.SecondActivity"
+            android:label="SecondActivity">
+        </activity>
+        <activity android:name=".Activitys.ThirdActivity"
+            android:label="ThirdActivity"/>
+        <activity android:name=".Activitys.ForthActivity"
+            android:label="ForthActivity"/>
+        <activity android:name=".Activitys.FiveActivity"
+            android:label="FiveActivity"/>
+        <activity android:name=".Activitys.SixActivity"
+            android:label="FiveActivity"/>
+    </application>
+    <!--<instrumentation android:targetPackage="com.channel.heihei.Activitys" android:name="android.test.InstrumentationTestRunner" />-->
+</manifest>
